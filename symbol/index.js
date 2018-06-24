@@ -11,4 +11,4 @@ function ClassCannotInstance() {
 }
 ClassCannotInstance();
 
-// const instance = new ClassCannotInstance();
+///// const instance = new ClassCannotInstance();
