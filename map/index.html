@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maps!</title>
+</head>
+<body>
+    <button >Snakes</button>
+    <button >Cry</button>
+    <button >Ice Cream</button>
+    <button >Flamin</button>
+    <button >Dancer</button>
+    <script>
+    // 有五个按钮，我要分别统计点按钮的次数
+    // Map 对象集合 key 类型也可以是一个对象
+    const clickCounts = new Map();
+    // json 跟 map 区别？
+    // 区别在它的key上
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(button => {
+        clickCounts.set(button,0);
+        button.addEventListener('click',function() {
+            const val = clickCounts.get(this);
+            // clickCounts.set(this,val+1);
+            // console.log(clickCounts)
+            this.innerHTML = val + 1;
+        })
+    })
+
+    // let oBtn = document.getElementsByTagName('button');
+    // const v = {
+    //     i: 0,
+    //     a: 0,
+    //     b: 0,
+    //     c: 0,
+    //     d: 0,
+    // }
+    // let i = 0;
+    // let a = 0;
+    // let b = 0;
+    // let c = 0;
+    // let d = 0;
+    
+    // function count() {
+    //     v.i++;
+    //     oBtn[0].innerHTML = v.i;
+    // }
+    // function count1() {
+    //     v.b++;
+    //     oBtn[1].innerHTML = v.b;
+    // }
+    // function count2() {
+    //     v.c++;
+    //     oBtn[2].innerHTML = v.c;
+    // }
+    // function count3() {
+    //     v.d++;
+    //     oBtn[3].innerHTML = v.d;
+    // }
+    // function count4() {
+    //     v.a++;
+    //     oBtn[4].innerHTML = v.a;
+    // }
+    </script>
+</body>
+</html>

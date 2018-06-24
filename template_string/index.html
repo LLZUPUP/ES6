@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>es6 更简洁，高效，优雅，面向未来</p>
+    <ul class="dogs">
+
+    </ul>
+
+    <script>
+        // 能用const，就用const
+        const name="张双双";
+        const age=18;
+        // `` ES6的字符串模版
+        const sentence = `My Friend ${name} is ${age} years old!Always!`
+        // 编译
+        const mrsZ ="My Friend "+name+" is "+age+" years old";
+        // console.log(sentence);
+        // console.log(mrsZ);
+        
+        const dogs = [
+            {name: 'Snickers', age: 2},
+            {name: 'HUgo',age: 8},
+            {name: 'Sunny',age: 1}
+        ];
+
+
+        // js 弱类型语言，在变量前面第一个字母加类型描述，有利于代码正确性
+        // 字符串模版让html模版组装变的很优雅。
+        // for(let i=0;i<dogs.length;i++) {
+            // document.querySelector('.dogs').innerHTML=<li>dogs[i]</li>;
+            // 创建一个li html标签 可以通过js 创建
+            // 1 createElement 2 appendChild 挂上去
+
+
+            // const oLi = document.createElement('li');
+            // const strDog = `${dogs[i].name} is ${dogs[i].age} years old!`
+            // oLi.appendChild(
+            //     document.createTextNode(strDog)
+            // )
+            // document.querySelector('.dogs').appendChild(oLi);
+
+            // document.querySelector('.dogs').appendChild(getOneDogHtml(dogs[i]));
+        // }
+
+
+        /*
+         * getOneDogHtml 返回单条狗的html
+         * params: dog 类型 json key {name age}
+         * return li节点
+         * 
+         * 
+         */
+        // function getOneDogHtml(dog) {
+        //     const oLi = document.createElement('li');
+        //     const strDog = `My Dog ${dog.name} is ${dog.age} years old!`
+        //     oLi.appendChild(document.createTextNode(strDog));
+        //     return oLi;
+
+        // }
+        
+        // 字符串模版接受可以支持换行，有点像html
+        // dogs 数组 要生成多少个li
+
+        const oUl=document.querySelector('.dogs');
+        const markup =`
+            ${
+                dogs.map(dog => `
+                    <li>
+                        ${dog.name} is ${dog.age*7}    
+                    </li>
+                `).join('')
+            }
+            
+        `
+        oUl.innerHTML = markup;
+    </script>
+</body>
+</html>
