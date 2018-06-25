@@ -9,5 +9,14 @@
 </head>
 <body>
     Hello ECMA Script6
+    <script>
+        let weakObj= new WeakSet();
+        let obj = {name: 'llz',age:22};
+        // let obj1 = {name: 'llz',age:22};
+        let obj1 = obj;
+        weakObj.add(obj);
+        weakObj.add(obj1);
+        console.log(weakObj)
+    </script>
 </body>
 </html>

@@ -129,7 +129,7 @@
 // let arr = [,,,];
 // console.log(arr.length)
 
-let arr = ["llz","xhq","jzm"];
+// let arr = ["llz","xhq","jzm"];
 // arr.forEach((item,index)=>{
 //     console.log(index,item)
 // })
@@ -146,15 +146,72 @@ let arr = ["llz","xhq","jzm"];
 // console.log(arr.join("|"))
 // console.log(arr)
 
-let a ={
-    a:'llz'
-}
-let b ={
-    b:'ll'
-}
-let c ={
-    c:'xhq'
-}
-let d = {}
-console.log(Object.assign(d,a,b,c))
-console.log(d)
+// let a ={
+//     a:'llz'
+// }
+// let b ={
+//     b:'ll'
+// }
+// let c ={
+//     c:'xhq'
+// }
+// let d = {}
+// console.log(Object.assign(d,a,b,c))
+// console.log(d)
+// console.log(a)
+// let e = Object.assign(a,b,c)
+// console.log(e)
+
+// let llz = Symbol('赵乐乐');
+// console.log(llz)
+// console.log(llz.toString())
+// console.log(typeof llz.toString())
+// console.log(typeof llz)
+
+// let llz = Symbol();
+// let obj = {
+//     [llz]: "赵乐乐"
+// }
+// console.log(obj[llz])
+// obj[llz]="llz";
+// console.log(obj[llz])
+
+// let obj ={
+//     name: 'llz',
+//     skill: "web"
+// }
+// let age = Symbol();
+// obj[age]=18;
+// console.log(obj[age])
+
+// for(let item in obj) {
+//     console.log(item)
+//     console.log(obj[item])
+// }
+
+
+// Set() 数据结构
+// let arr = [1,2,3,4,5,4,3,2,8];
+// let arr2 = new Set(arr)
+// console.log(arr2)
+// arr2.add(111)
+// console.log(arr2)
+// console.log(arr2.has('asdasd'))
+// arr2.delete(2)
+// console.log(arr2)
+// // for(let item of arr2) {
+// //     console.log(item)
+// // }
+// arr2.forEach((item)=>{
+//     console.log(item)
+// })
+// console.log(arr2.size)  //Set数据结构里的数量，大小
+
+
+// arr.forEach((item,index)=>{
+//     console.log(item)
+//     console.log(index)
+// })
+
+// Map数据结构
+
