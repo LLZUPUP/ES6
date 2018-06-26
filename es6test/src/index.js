@@ -215,3 +215,8 @@
 
 // Map数据结构
 
+
+
+import abd from './temp.js'
+
+console.log(abd)

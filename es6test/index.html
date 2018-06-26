@@ -10,13 +10,97 @@
 <body>
     Hello ECMA Script6
     <script>
-        let weakObj= new WeakSet();
-        let obj = {name: 'llz',age:22};
-        // let obj1 = {name: 'llz',age:22};
-        let obj1 = obj;
-        weakObj.add(obj);
-        weakObj.add(obj1);
-        console.log(weakObj)
+        // let weakObj= new WeakSet();
+        // let obj = {name: 'llz',age:22};
+        // // let obj1 = {name: 'llz',age:22};
+        // let obj1 = obj;
+        // weakObj.add(obj);
+        // weakObj.add(obj1);
+        // console.log(weakObj)
+        // let llzz = {
+        //     name: "赵乐乐",
+        //     age: 22
+        // }
+        // let map = new Map();
+        // map.set(llzz,"i am");
+        // console.log(map)
+        // map.set("what",llzz)
+        // console.log(map)
+        // console.log(map.get("what"))
+        // map.delete(llzz);
+        // console.log(map)
+        // console.log(map.size)
+        // console.log(map.has(llzz))
+        
+        // let state = 1;
+        // function step1(resolve,reject) {
+        //     console.log('1.开始洗菜做饭')
+        //     if(state==1) {
+        //         resolve('洗菜做饭－完成')
+        //     }else {
+        //         reject('洗菜做饭－失败')
+        //     }
+        // }
+        // function step2(resolve,reject) {
+        //     state = 2;
+        //     console.log('2.开始坐下来吃饭')
+        //     if(state==1) {
+        //         resolve('坐下来吃饭－完成')
+        //     }else {
+        //         reject('坐下来吃饭－失败')
+        //     }
+        // }
+        // function step3(resolve,reject) {
+        //     console.log('3.开始收拾桌子洗碗')
+        //     if(state==1) {
+        //         resolve('收拾桌子洗碗－完成')
+        //     }else {
+        //         reject('收拾桌子洗碗 －失败')
+        //     }
+        // }
+        // new Promise(step1).then(function(val) {
+        //     console.log(val)
+        //     return new Promise(step2)
+        // }).then(function(val) {
+        //     console.log(val)
+        //     return new Promise(step3)
+        // },function(error) {
+        //     console.log(error)
+        // }).then(function(val) {
+        //     console.log(val)
+        // })
+
+        // class Coder {
+        //     constructor(a,b) {
+        //         this.a = a;
+        //         this.b = b;
+        //     }
+        //     add() {
+        //         console.log(this.a+this.b)
+        //     }
+        //     name(val) {
+        //         console.log(val)
+        //         return val;
+        //     }
+        //     skill(val) {
+        //         console.log(`${this.name('赵乐乐')}：Skill-${val}`)
+        //     }
+        // }
+        // let llzz = new Coder(1,2);
+        // // llzz.name('赵乐乐')
+        // // llzz.skill('web')
+        // // llzz.add()
+        // class Htmler extends Coder{
+
+        // }
+        
+        // let qiqi = new Htmler(4,5);
+        // qiqi.name('谢慧琪');
+        // qiqi.add();
+        
+        
+
+
     </script>
 </body>
 </html>
